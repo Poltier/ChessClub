@@ -12,6 +12,8 @@ body {
   background-color: $white-color;
 }
 
+//HEADER
+
 header {
   border-bottom: 2px solid $body-bg;
 }
@@ -41,19 +43,19 @@ header {
   margin-bottom: 0rem;
 }
 
+//FOOTER
+
 .footer {
   padding-top: 60px;
 }
 
-.landing {
-  background-color: $body-bg;
-}
+//ARTICLE
 
 .custom-container {
   max-width: 600px; 
+  padding: 0px 20px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0px 20px;
 }
 
 .list-circle {
@@ -90,6 +92,8 @@ header {
   transform: translateY(-50%);
 }
 
+//FOOTER
+
 .footer-link {
   font-weight: bold;
   color: $body-color;
@@ -103,5 +107,120 @@ header {
 
 footer .img-fluid {
   height: 100px;
+}
+
+//INDEX
+
+.landing {
+  background-color: $body-bg;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.promo-tournament {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.promo-text {
+  text-align: center;
+}
+
+.promo-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-image-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For browsers that do not support CSS Grid */
+@supports not (display: grid) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .promo-tournament {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .promo-image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+//MEMBERS
+
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.member-card {
+  display: flex;
+  flex: 1 1 calc(33.3333% - 1rem);
+  flex-direction: column;
+  max-width: calc(33.3333% - 1rem);
+  min-height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .member-card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .member-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
