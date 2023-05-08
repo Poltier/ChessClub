@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,9 +9,39 @@
   </head>
   <body>
     <include src="./views/header.html"></include>
-    <p>Hola amigos</p>
-    <iframe src="https://livetactics.chessbase.com" width="400" height="440"></iframe>
+
+    <div class="custom-container">
+      <h1 class="text-center mt-4">Practice your skills</h1>
+      <p class="lead text-center mb-4">Improve your chess game with our interactive tactics trainer and various resources!</p>
+      
+      <h2 class="text-center mt-4">Tactics Trainer</h2>
+      <div class="d-flex justify-content-center">
+        <iframe src="https://livetactics.chessbase.com" width="400" height="440"></iframe>
+      </div>
+      
+      <h2 class="text-center mt-4">Tips & Resources</h2>
+      <p class="mt-4">Here are some tips and resources to help you improve your chess skills:</p>
+      <ul>
+        <li>Study chess openings and endgames</li>
+        <li>Practice tactics with puzzles and exercises</li>
+        <li>Play regularly with friends or online opponents</li>
+        <li>Analyze your games to identify strengths and weaknesses</li>
+        <li>Watch video lessons from top chess players and coaches</li>
+      </ul>
+
+      <h2 class="text-center mt-4">Frequently Asked Questions</h2>
+      <h4 class="mt-4">How can I improve my chess rating?</h4>
+      <p>Improving your chess rating takes time and practice. Focus on learning and understanding chess strategies, tactics, and endgames. Play games regularly, analyze your performance, and learn from your mistakes.</p>
+      
+      <h4 class="mt-4">What are some good chess books for beginners?</h4>
+      <p>Some popular chess books for beginners include "Bobby Fischer Teaches Chess" by Bobby Fischer, "Logical Chess: Move by Move" by Irving Chernev, and "The Complete Idiot's Guide to Chess" by Patrick Wolff.</p>
+      
+      <h4 class="mt-4">How do I find a chess coach?</h4>
+      <p>You can find a chess coach by asking for recommendations from fellow chess players, contacting local chess clubs, or searching online for qualified coaches. Make sure to choose a coach with experience and a teaching style that matches your learning preferences.</p>
+    </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
