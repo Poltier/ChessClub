@@ -14,26 +14,33 @@ body {
 
 //HEADER
 
-header {
+.header {
   border-bottom: 2px solid $body-bg;
 }
 
-.logo-img {
+.header__logo-img {
   width: auto;
   max-height: 60px;
   margin: 5px 10px;
 }
 
-.nav-item {
+.header__nav-item {
   margin-right: 20px;
   font-weight: bold;
 }
 
-.navbar-brand {
+.header__brand {
   font-weight: bold;
 }
 
-.last-row {
+
+//FOOTER
+
+.footer__container {
+  padding-top: 60px;
+}
+
+.footer__last-row {
   padding: 15px;
   color: white;
   background-color: $uoc-corporate;
@@ -43,10 +50,19 @@ header {
   margin-bottom: 0rem;
 }
 
-//FOOTER
+.footer-link {
+  font-weight: bold;
+  color: $body-color;
+  text-decoration: none;
+}
 
-.footer {
-  padding-top: 60px;
+.footer-link:hover {
+  color: $body-bg;
+  text-decoration: none;
+}
+
+footer .img-fluid {
+  height: 100px;
 }
 
 //ARTICLE
@@ -90,23 +106,6 @@ header {
   border: 2px solid #007bff67;
   border-radius: 50%; 
   transform: translateY(-50%);
-}
-
-//FOOTER
-
-.footer-link {
-  font-weight: bold;
-  color: $body-color;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: $body-bg;
-  text-decoration: none;
-}
-
-footer .img-fluid {
-  height: 100px;
 }
 
 //INDEX
